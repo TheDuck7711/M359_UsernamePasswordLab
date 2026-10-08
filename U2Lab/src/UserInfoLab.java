@@ -45,8 +45,15 @@ public class UserInfoLab {
 
     public static String generateUsername(String firstName, String lastName) {
         // Fill in this method and return an appropriate username
-
-        String output = firstName.substring(0,3).toLowerCase() + lastName.substring(0,3).toLowerCase();
+        int a = 3;
+        int b = 3;
+        if(firstName.length()<3){
+            a = firstName.length();
+        }
+        if(lastName.length()<3){
+            b = lastName.length();
+        }
+        String output = firstName.substring(0,a).toLowerCase() + lastName.substring(0,b).toLowerCase();
         return output;
     }
 
