@@ -69,6 +69,7 @@ public class UserInfoLab {
         }
         if(!(containsDigit(password))){
             System.out.println("Password does not contain a digit");
+            return false;
         }
         return true;
     }
