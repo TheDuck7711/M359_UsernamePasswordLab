@@ -71,6 +71,7 @@ public class UserInfoLab {
             System.out.println("Password does not contain a digit");
             return false;
         }
+        System.out.println("valid password");
         return true;
     }
 
